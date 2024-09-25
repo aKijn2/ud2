@@ -43,6 +43,7 @@ public class errepasojardueraStringfuntzioa {
             System.out.println("Zure izenaren azkenengo letra: " + azkenLetra);
             break;
         }
+
         // Izena larriz eta xehez inprimatzen duen funtzioa.
         System.out.println("Zure izena letra larriz: " + izena.toUpperCase() + " da.");
         System.out.println("Zure izena letra xehez: " + izena.toLowerCase() + " da.");
