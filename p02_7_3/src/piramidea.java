@@ -1,22 +1,18 @@
-
 public class piramidea {
+    public static void main(String[] args) {
+        int rows = 5; // Number of rows for the pyramid
 
-    public static void main(String[] args) throws Exception {
-
-        int altura = 5;
-        int espazioa = altura - 1;
-        int asteriscoa = 1;
-
-        for (int i = 0; i < altura; i++) {
-            for (int j = 0; j < espazioa; j++) {
+        for (int i = 1; i <= rows; i++) {
+            // utsuneak imp
+            for (int j = i; j < rows; j++) {
                 System.out.print(" ");
             }
-            for (int j = 0; j < asteriscoa; j++) {
+            // izarrak imprimatuko ditu
+            for (int k = 1; k <= (2 * i - 1); k++) {
                 System.out.print("*");
             }
+            // mugitu hurrengo lerrora
             System.out.println();
-            espazioa--;
-            asteriscoa += 2;
         }
     }
 }
